@@ -36,12 +36,12 @@ export default class Game {
 
     console.log('antal enemies', this.enemies)
     this.lastSpawnTime += deltaTime;
-    if (this.lastSpawnTime >= this.spawnInterval) {
+    if (this.lastSpawnTime >= this.spawnInterval && this.enemies.length < 30 ) {
       const enemy = new Enemy(Math.random() * this.width, Math.random() * this.height, 100, 60, "red", this.player);
-      this.enemies.push(enemy);
+      this.enemies.push(enemy); 
       this.lastSpawnTime = 0; 
     }
-j
+
 
     for (const enemy of this.enemies) {
       enemy.update();
