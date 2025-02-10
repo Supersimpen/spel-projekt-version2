@@ -6,7 +6,7 @@ export default class Player extends GameObject {
     this.game = game
 
     this.image = new Image()
-    this.image.src = "./src/assets/Grabbmedspade1.png"
+    this.image.src = "./assets/Grabbmedspade1.png"
 
 
     this.frameWidth = 253

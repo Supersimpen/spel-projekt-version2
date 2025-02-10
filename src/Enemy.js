@@ -7,7 +7,7 @@ export default class Enemy extends GameObject {
     this.speed = 0.05; 
 
     this.image = new Image();
-    this.image.src = "./src/assets/isbjörn.png";
+    this.image.src = "/assets/isbjörn.png";
     this.frameWidth = 783; // Width of a single frame
     this.frameHeight = 380; // Height of a single frame
     this.frameX = 0; // Current frame index
